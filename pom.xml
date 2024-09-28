@@ -99,7 +99,6 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -116,6 +115,15 @@
                 </executions>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version> <!-- Utilisez une version compatible -->
+                <configuration>
+                    <source>22</source> <!-- Spécifiez votre version de Java -->
+                    <target>22</target> <!-- Spécifiez votre version de Java -->
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
