@@ -106,7 +106,7 @@
 
     <distributionManagement>
         <repository>
-            <id>local-repo</id>
+            <id>core</id>
             <url>file://${project.build.directory}/repo</url>
         </repository>
     </distributionManagement>
